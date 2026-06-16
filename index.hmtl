@@ -1,0 +1,430 @@
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Guilherme Galbiatti | Imóveis de Alto Padrão em Curitiba</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Montserrat',sans-serif;
+    color:#222;
+    line-height:1.6;
+}
+
+.hero{
+    min-height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,.60),rgba(0,0,0,.60)),
+    url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:white;
+    padding:40px;
+}
+
+.hero-content{
+    max-width:900px;
+}
+
+.logo{
+    font-size:14px;
+    letter-spacing:3px;
+    text-transform:uppercase;
+    margin-bottom:20px;
+    color:#d4af37;
+}
+
+.hero h1{
+    font-family:'Playfair Display',serif;
+    font-size:4rem;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:1.2rem;
+    max-width:700px;
+    margin:auto;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    background:#d4af37;
+    color:#fff;
+    padding:16px 35px;
+    border-radius:5px;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#b58d18;
+}
+
+section{
+    padding:90px 10%;
+}
+
+.section-title{
+    text-align:center;
+    font-size:2.6rem;
+    font-family:'Playfair Display',serif;
+    margin-bottom:50px;
+}
+
+.about{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:center;
+}
+
+.about img{
+    width:100%;
+    border-radius:12px;
+}
+
+.about h3{
+    margin-bottom:15px;
+    font-size:2rem;
+}
+
+.about p{
+    margin-bottom:15px;
+}
+
+.credentials{
+    background:#111;
+    color:#fff;
+    padding:20px;
+    border-radius:8px;
+    margin-top:20px;
+}
+
+.video{
+    background:#f8f8f8;
+    text-align:center;
+}
+
+.video iframe{
+    width:100%;
+    max-width:900px;
+    height:500px;
+    border:none;
+    border-radius:10px;
+}
+
+.features{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    padding:35px;
+    border:1px solid #e5e5e5;
+    border-radius:12px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.card h4{
+    color:#d4af37;
+    margin-bottom:15px;
+}
+
+.neighborhoods{
+    background:#111;
+    color:white;
+}
+
+.neighborhood-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+}
+
+.neighborhood{
+    background:#1f1f1f;
+    padding:25px;
+    text-align:center;
+    border-radius:10px;
+}
+
+.form-section{
+    background:#f5f5f5;
+}
+
+form{
+    max-width:700px;
+    margin:auto;
+}
+
+input,
+textarea{
+    width:100%;
+    padding:15px;
+    margin-bottom:15px;
+    border:1px solid #ddd;
+    border-radius:6px;
+}
+
+button{
+    width:100%;
+    padding:16px;
+    border:none;
+    background:#d4af37;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    border-radius:6px;
+}
+
+.cta{
+    background:#000;
+    color:white;
+    text-align:center;
+}
+
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:50px 20px;
+}
+
+footer p{
+    margin:8px 0;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:2.6rem;
+}
+
+.about{
+    grid-template-columns:1fr;
+}
+
+.video iframe{
+    height:250px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<div class="logo">
+PL2 IMÓVEIS • CURITIBA
+</div>
+
+<h1>Imóveis de Alto Padrão em Curitiba</h1>
+
+<p>
+Atendimento exclusivo para clientes que buscam os melhores imóveis
+para morar ou investir com segurança, discrição e excelência.
+</p>
+
+<a href="https://wa.me/5541999999999" class="btn">
+Agendar Consultoria
+</a>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">Conheça Guilherme Galbiatti</h2>
+
+<div class="about">
+
+<img src="https://images.unsplash.com/photo-1560250097-0b93528c311a"
+alt="Guilherme Galbiatti">
+
+<div>
+
+<h3>Consultoria Imobiliária Personalizada</h3>
+
+<p>
+Especializado no mercado imobiliário de alto padrão,
+Guilherme Galbiatti oferece atendimento próximo,
+estratégico e totalmente personalizado.
+</p>
+
+<p>
+Seu objetivo é identificar oportunidades exclusivas,
+entender as necessidades de cada cliente e conduzir
+todo o processo de negociação com transparência.
+</p>
+
+<div class="credentials">
+
+<p><strong>Guilherme Galbiatti</strong></p>
+
+<p>CRECI 159.992-F</p>
+
+<p>Consultor associado à PL2 Imóveis</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="video">
+
+<h2 class="section-title">Apresentação</h2>
+
+<iframe
+src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+allowfullscreen>
+</iframe>
+
+<p style="margin-top:20px;">
+Substitua este vídeo pela apresentação do Guilherme.
+</p>
+
+</section>
+
+<section>
+
+<h2 class="section-title">Diferenciais</h2>
+
+<div class="features">
+
+<div class="card">
+<h4>Atendimento Exclusivo</h4>
+<p>Experiência personalizada para cada cliente.</p>
+</div>
+
+<div class="card">
+<h4>Imóveis Selecionados</h4>
+<p>Curadoria dos melhores imóveis do mercado.</p>
+</div>
+
+<div class="card">
+<h4>Negociação Segura</h4>
+<p>Acompanhamento completo até a conclusão da compra.</p>
+</div>
+
+<div class="card">
+<h4>Mercado de Luxo</h4>
+<p>Foco em imóveis de alto padrão e investimentos.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="neighborhoods">
+
+<h2 class="section-title">Regiões Nobres de Curitiba</h2>
+
+<div class="neighborhood-grid">
+
+<div class="neighborhood">Batel</div>
+<div class="neighborhood">Ecoville</div>
+<div class="neighborhood">Bigorrilho</div>
+<div class="neighborhood">Champagnat</div>
+<div class="neighborhood">Cabral</div>
+<div class="neighborhood">Água Verde</div>
+
+</div>
+
+</section>
+
+<section class="form-section">
+
+<h2 class="section-title">Solicite uma Consultoria</h2>
+
+<form>
+
+<input type="text" placeholder="Nome">
+
+<input type="tel" placeholder="Telefone">
+
+<input type="email" placeholder="E-mail">
+
+<input type="text" placeholder="Tipo de imóvel desejado">
+
+<textarea rows="5" placeholder="Conte um pouco sobre o imóvel que procura"></textarea>
+
+<button type="submit">
+Quero Encontrar Meu Imóvel
+</button>
+
+</form>
+
+</section>
+
+<section class="cta">
+
+<h2 style="font-size:3rem;margin-bottom:20px;">
+Vamos Conversar?
+</h2>
+
+<p style="margin-bottom:30px;">
+Receba uma seleção exclusiva de imóveis alinhados ao seu perfil.
+</p>
+
+<a href="https://wa.me/5541999999999" class="btn">
+Falar no WhatsApp
+</a>
+
+</section>
+
+<footer>
+
+<h3>Guilherme Galbiatti</h3>
+
+<p>Consultor Imobiliário de Alto Padrão</p>
+
+<p>CRECI 159.992-F</p>
+
+<p>PL2 Imóveis • Curitiba - PR</p>
+
+<p>WhatsApp: (41) 99999-9999</p>
+
+<p>Instagram: @guilhermegalbiatti</p>
+
+</footer>
+
+</body>
+</html>
+```
