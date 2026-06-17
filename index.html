@@ -1,243 +1,301 @@
 <!DOCTYPE html>
+
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Guilherme Galbiatti | Imóveis de Alto Padrão em Curitiba</title>
+<title>Guilherme Galbiatti | Imóveis de Alto Padrão em Curitiba e Consultoria Imobiliária em Catanduva</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+<meta name="description" content="Consultoria imobiliária personalizada para compra, venda e investimentos em imóveis de alto padrão em Curitiba e atendimento exclusivo em Catanduva.">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 <style>
 
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
 html{
-    scroll-behavior:smooth;
+scroll-behavior:smooth;
 }
 
 body{
-    font-family:'Montserrat',sans-serif;
-    color:#222;
-    line-height:1.6;
+font-family:'Montserrat',sans-serif;
+color:#222;
+line-height:1.6;
 }
 
 .hero{
-    min-height:100vh;
-    background:
-    linear-gradient(rgba(0,0,0,.60),rgba(0,0,0,.60)),
-    url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c');
-    background-size:cover;
-    background-position:center;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    text-align:center;
-    color:white;
-    padding:40px;
+min-height:100vh;
+background:
+linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c');
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:40px;
+color:white;
 }
 
 .hero-content{
-    max-width:900px;
+max-width:900px;
 }
 
 .logo{
-    font-size:14px;
-    letter-spacing:3px;
-    text-transform:uppercase;
-    margin-bottom:20px;
-    color:#d4af37;
+letter-spacing:3px;
+color:#d4af37;
+margin-bottom:20px;
+font-size:14px;
+text-transform:uppercase;
 }
 
 .hero h1{
-    font-family:'Playfair Display',serif;
-    font-size:4rem;
-    margin-bottom:20px;
+font-family:'Playfair Display',serif;
+font-size:4rem;
+margin-bottom:20px;
 }
 
 .hero p{
-    font-size:1.2rem;
-    max-width:700px;
-    margin:auto;
-    margin-bottom:30px;
+font-size:1.2rem;
+max-width:700px;
+margin:auto;
+margin-bottom:40px;
 }
 
 .btn{
-    display:inline-block;
-    background:#d4af37;
-    color:#fff;
-    padding:16px 35px;
-    border-radius:5px;
-    text-decoration:none;
-    font-weight:600;
-    transition:.3s;
+display:inline-block;
+background:#d4af37;
+color:white;
+padding:16px 35px;
+text-decoration:none;
+border-radius:6px;
+font-weight:600;
+transition:.3s;
 }
 
 .btn:hover{
-    background:#b58d18;
+background:#b58d18;
 }
 
 section{
-    padding:90px 10%;
+padding:90px 10%;
 }
 
 .section-title{
-    text-align:center;
-    font-size:2.6rem;
-    font-family:'Playfair Display',serif;
-    margin-bottom:50px;
+text-align:center;
+font-family:'Playfair Display',serif;
+font-size:2.6rem;
+margin-bottom:50px;
+}
+
+.stats{
+background:#0d0d0d;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.stat{
+background:#111;
+padding:40px;
+border-radius:16px;
+text-align:center;
+color:white;
+}
+
+.stat h3{
+font-size:2.5rem;
+color:#d4af37;
 }
 
 .about{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:50px;
-    align-items:center;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:50px;
+align-items:center;
 }
 
 .about img{
-    width:100%;
-    border-radius:12px;
-}
-
-.about h3{
-    margin-bottom:15px;
-    font-size:2rem;
-}
-
-.about p{
-    margin-bottom:15px;
+width:100%;
+border-radius:16px;
 }
 
 .credentials{
-    background:#111;
-    color:#fff;
-    padding:20px;
-    border-radius:8px;
-    margin-top:20px;
+background:#111;
+color:white;
+padding:20px;
+margin-top:20px;
+border-radius:10px;
 }
 
-.video{
-    background:#f8f8f8;
-    text-align:center;
+.areas{
+background:#f7f7f7;
 }
 
-.video iframe{
-    width:100%;
-    max-width:900px;
-    height:500px;
-    border:none;
-    border-radius:10px;
+.area-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:25px;
+}
+
+.area-card{
+background:white;
+padding:35px;
+border-radius:15px;
+box-shadow:0 5px 20px rgba(0,0,0,.05);
+}
+
+.properties{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.property{
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.property img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.property-content{
+padding:20px;
+}
+
+.property h4{
+margin-bottom:10px;
+}
+
+.property-price{
+font-size:1.3rem;
+font-weight:700;
+color:#d4af37;
 }
 
 .features{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:25px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
 }
 
-.card{
-    padding:35px;
-    border:1px solid #e5e5e5;
-    border-radius:12px;
-    transition:.3s;
+.feature{
+padding:30px;
+border:1px solid #e5e5e5;
+border-radius:15px;
+text-align:center;
 }
 
-.card:hover{
-    transform:translateY(-5px);
-    box-shadow:0 10px 25px rgba(0,0,0,.08);
+.feature i{
+font-size:35px;
+color:#d4af37;
+margin-bottom:15px;
 }
 
-.card h4{
-    color:#d4af37;
-    margin-bottom:15px;
+.testimonials{
+background:#111;
+color:white;
 }
 
-.neighborhoods{
-    background:#111;
-    color:white;
-}
-
-.neighborhood-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-    gap:20px;
-}
-
-.neighborhood{
-    background:#1f1f1f;
-    padding:25px;
-    text-align:center;
-    border-radius:10px;
+.testimonial{
+background:#1b1b1b;
+padding:30px;
+border-radius:15px;
+margin-bottom:20px;
 }
 
 .form-section{
-    background:#f5f5f5;
+background:#f5f5f5;
 }
 
 form{
-    max-width:700px;
-    margin:auto;
+max-width:700px;
+margin:auto;
 }
 
 input,
+select,
 textarea{
-    width:100%;
-    padding:15px;
-    margin-bottom:15px;
-    border:1px solid #ddd;
-    border-radius:6px;
+width:100%;
+padding:15px;
+margin-bottom:15px;
+border:1px solid #ddd;
+border-radius:8px;
 }
 
 button{
-    width:100%;
-    padding:16px;
-    border:none;
-    background:#d4af37;
-    color:white;
-    font-size:16px;
-    cursor:pointer;
-    border-radius:6px;
+width:100%;
+padding:16px;
+background:#d4af37;
+color:white;
+border:none;
+border-radius:8px;
+cursor:pointer;
+font-size:16px;
 }
 
 .cta{
-    background:#000;
-    color:white;
-    text-align:center;
+background:black;
+color:white;
+text-align:center;
 }
 
 footer{
-    background:#111;
-    color:white;
-    text-align:center;
-    padding:50px 20px;
+background:#111;
+color:white;
+text-align:center;
+padding:50px 20px;
 }
 
 footer p{
-    margin:8px 0;
+margin:8px 0;
+}
+
+.whatsapp-float{
+position:fixed;
+bottom:25px;
+right:25px;
+width:70px;
+height:70px;
+background:#25D366;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+color:white;
+font-size:35px;
+text-decoration:none;
+box-shadow:0 10px 25px rgba(37,211,102,.4);
+z-index:999;
 }
 
 @media(max-width:768px){
 
 .hero h1{
-    font-size:2.6rem;
+font-size:2.6rem;
 }
 
 .about{
-    grid-template-columns:1fr;
-}
-
-.video iframe{
-    height:250px;
+grid-template-columns:1fr;
 }
 
 }
 
 </style>
+
 </head>
 
 <body>
@@ -250,11 +308,12 @@ footer p{
 PL2 IMÓVEIS • CURITIBA
 </div>
 
-<h1>Imóveis de Alto Padrão em Curitiba</h1>
+<h1>
+Imóveis de Alto Padrão em Curitiba e Consultoria Imobiliária em Catanduva
+</h1>
 
 <p>
-Atendimento exclusivo para clientes que buscam os melhores imóveis
-para morar ou investir com segurança, discrição e excelência.
+Atendimento exclusivo para quem busca comprar, vender ou investir com segurança, transparência e acompanhamento personalizado.
 </p>
 
 <a href="https://wa.me/5517997799409" class="btn">
@@ -265,29 +324,48 @@ Agendar Consultoria
 
 </section>
 
+<section class="stats">
+
+<div class="stat">
+<h3>+500</h3>
+<p>Imóveis analisados</p>
+</div>
+
+<div class="stat">
+<h3>+100</h3>
+<p>Clientes atendidos</p>
+</div>
+
+<div class="stat">
+<h3>Curitiba</h3>
+<p>Especialista em alto padrão</p>
+</div>
+
+<div class="stat">
+<h3>Catanduva</h3>
+<p>Atendimento personalizado</p>
+</div>
+
+</section>
+
 <section>
 
 <h2 class="section-title">Conheça Guilherme Galbiatti</h2>
 
 <div class="about">
 
-<img src="https://images.unsplash.com/photo-1560250097-0b93528c311a"
-alt="Guilherme Galbiatti">
+<img src="SUA-FOTO-AQUI.jpg" alt="Guilherme Galbiatti">
 
 <div>
 
 <h3>Consultoria Imobiliária Personalizada</h3>
 
 <p>
-Especializado no mercado imobiliário de alto padrão,
-Guilherme Galbiatti oferece atendimento próximo,
-estratégico e totalmente personalizado.
+Atuando nos mercados de Curitiba e Catanduva, Guilherme Galbiatti oferece atendimento próximo e estratégico para clientes que buscam oportunidades imobiliárias com segurança e confiança.
 </p>
 
 <p>
-Seu objetivo é identificar oportunidades exclusivas,
-entender as necessidades de cada cliente e conduzir
-todo o processo de negociação com transparência.
+Cada negociação é conduzida de forma personalizada, buscando entender o perfil e os objetivos de cada cliente.
 </p>
 
 <div class="credentials">
@@ -306,18 +384,64 @@ todo o processo de negociação com transparência.
 
 </section>
 
-<section class="video">
+<section class="areas">
 
-<h2 class="section-title">Apresentação</h2>
+<h2 class="section-title">Áreas de Atuação</h2>
 
-<iframe
-src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-allowfullscreen>
-</iframe>
+<div class="area-grid">
 
-<p style="margin-top:20px;">
-Substitua este vídeo pela apresentação do Guilherme.
+<div class="area-card">
+<h3>Curitiba</h3>
+<p>
+Especialista em imóveis de alto padrão nos principais bairros da cidade como Batel, Ecoville, Cabral, Bigorrilho e Água Verde.
 </p>
+</div>
+
+<div class="area-card">
+<h3>Catanduva</h3>
+<p>
+Consultoria imobiliária personalizada para compra, venda e análise de oportunidades residenciais e comerciais.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">Imóveis em Destaque</h2>
+
+<div class="properties">
+
+<div class="property">
+<img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c">
+<div class="property-content">
+<h4>Batel</h4>
+<p>Apartamento de Alto Padrão</p>
+<div class="property-price">R$ 2.490.000</div>
+</div>
+</div>
+
+<div class="property">
+<img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde">
+<div class="property-content">
+<h4>Ecoville</h4>
+<p>Casa Exclusiva</p>
+<div class="property-price">R$ 4.300.000</div>
+</div>
+</div>
+
+<div class="property">
+<img src="https://images.unsplash.com/photo-1600573472550-8090b5e0745e">
+<div class="property-content">
+<h4>Água Verde</h4>
+<p>Apartamento Moderno</p>
+<div class="property-price">R$ 1.780.000</div>
+</div>
+</div>
+
+</div>
 
 </section>
 
@@ -327,43 +451,42 @@ Substitua este vídeo pela apresentação do Guilherme.
 
 <div class="features">
 
-<div class="card">
+<div class="feature">
+<i class="fas fa-user-tie"></i>
 <h4>Atendimento Exclusivo</h4>
-<p>Experiência personalizada para cada cliente.</p>
 </div>
 
-<div class="card">
-<h4>Imóveis Selecionados</h4>
-<p>Curadoria dos melhores imóveis do mercado.</p>
+<div class="feature">
+<i class="fas fa-house"></i>
+<h4>Curadoria de Imóveis</h4>
 </div>
 
-<div class="card">
+<div class="feature">
+<i class="fas fa-handshake"></i>
 <h4>Negociação Segura</h4>
-<p>Acompanhamento completo até a conclusão da compra.</p>
 </div>
 
-<div class="card">
-<h4>Mercado de Luxo</h4>
-<p>Foco em imóveis de alto padrão e investimentos.</p>
+<div class="feature">
+<i class="fas fa-chart-line"></i>
+<h4>Visão de Investimento</h4>
 </div>
 
 </div>
 
 </section>
 
-<section class="neighborhoods">
+<section class="testimonials">
 
-<h2 class="section-title">Regiões Nobres de Curitiba</h2>
+<h2 class="section-title">Depoimentos</h2>
 
-<div class="neighborhood-grid">
+<div class="testimonial">
+⭐⭐⭐⭐⭐ <br><br>
+Seu depoimento poderá aparecer aqui em breve.
+</div>
 
-<div class="neighborhood">Batel</div>
-<div class="neighborhood">Ecoville</div>
-<div class="neighborhood">Bigorrilho</div>
-<div class="neighborhood">Champagnat</div>
-<div class="neighborhood">Cabral</div>
-<div class="neighborhood">Água Verde</div>
-
+<div class="testimonial">
+⭐⭐⭐⭐⭐ <br><br>
+Espaço reservado para avaliações de clientes.
 </div>
 
 </section>
@@ -372,34 +495,98 @@ Substitua este vídeo pela apresentação do Guilherme.
 
 <h2 class="section-title">Solicite uma Consultoria</h2>
 
-<form>
+<input type="text" id="nome" placeholder="Nome completo" required>
 
-<input type="text" placeholder="Nome">
+<input type="tel" id="telefone" placeholder="WhatsApp" required>
 
-<input type="tel" placeholder="Telefone">
+<select id="objetivo" required>
+<option value="">Objetivo</option>
+<option>Comprar imóvel</option>
+<option>Vender imóvel</option>
+<option>Investir</option>
+<option>Locação</option>
+</select>
 
-<input type="email" placeholder="E-mail">
+<select id="cidade" required>
+<option value="">Cidade de interesse</option>
+<option>Curitiba</option>
+<option>Catanduva</option>
+</select>
 
-<input type="text" placeholder="Tipo de imóvel desejado">
+<select id="regiao" required>
+<option value="">Região desejada</option>
+<option>Batel</option>
+<option>Ecoville</option>
+<option>Bigorrilho</option>
+<option>Água Verde</option>
+<option>Cabral</option>
+<option>Centro de Catanduva</option>
+<option>Jardim dos Coqueiros</option>
+<option>Parque Iracema</option>
+<option>Outro</option>
+</select>
 
-<textarea rows="5" placeholder="Conte um pouco sobre o imóvel que procura"></textarea>
+<select id="investimento" required>
+<option value="">Faixa de investimento</option>
+<option>Até R$ 500 mil</option>
+<option>R$ 500 mil a R$ 1 milhão</option>
+<option>R$ 1 milhão a R$ 3 milhões</option>
+<option>R$ 3 milhões a R$ 5 milhões</option>
+<option>Acima de R$ 5 milhões</option>
+</select>
 
-<button type="submit">
-Quero Encontrar Meu Imóvel
-</button>
+<textarea
+id="mensagem"
+rows="5"
+placeholder="Descreva o imóvel que procura">
+</textarea>
 
-</form>
+
+<script>
+
+document.getElementById("leadForm").addEventListener("submit", function(e){
+
+e.preventDefault();
+
+const nome = document.getElementById("nome").value;
+const telefone = document.getElementById("telefone").value;
+const investimento = document.getElementById("investimento").value;
+const regiao = document.getElementById("regiao").value;
+const mensagem = document.getElementById("mensagem").value;
+
+const texto =
+`Olá Guilherme!
+
+Tenho interesse em uma consultoria imobiliária.
+
+👤 Nome: ${nome}
+📱 WhatsApp: ${telefone}
+💰 Faixa de investimento: ${investimento}
+📍 Região desejada: ${regiao}
+
+🏠 Detalhes:
+${mensagem}`;
+
+const url =
+`https://wa.me/5517997799409?text=${encodeURIComponent(texto)}`;
+
+window.open(url, "_blank");
+
+});
+
+</script>
+
 
 </section>
 
 <section class="cta">
 
 <h2 style="font-size:3rem;margin-bottom:20px;">
-Vamos Conversar?
+Receba uma seleção exclusiva de imóveis
 </h2>
 
 <p style="margin-bottom:30px;">
-Receba uma seleção exclusiva de imóveis alinhados ao seu perfil.
+Entre em contato e receba oportunidades alinhadas ao seu perfil.
 </p>
 
 <a href="https://wa.me/5517997799409" class="btn">
@@ -412,17 +599,25 @@ Falar no WhatsApp
 
 <h3>Guilherme Galbiatti</h3>
 
-<p>Consultor Imobiliário de Alto Padrão</p>
+<p>Consultor Imobiliário</p>
 
 <p>CRECI 159.992-F</p>
 
-<p>PL2 Imóveis • Curitiba - PR</p>
+<p>PL2 Imóveis</p>
 
-<p>WhatsApp: (+55) 17 99779-9409</p>
+<p>Av. República Argentina, 1350, Sala 5</p>
 
-<p>Instagram: @guilhermegalbiatti</p>
+<p>Água Verde - Curitiba/PR</p>
+
+<p>WhatsApp: (17) 99779-9409</p>
+
+<p>Instagram: @guilhermegalbiatti16</p>
 
 </footer>
+
+<a href="https://wa.me/5517997799409" class="whatsapp-float">
+<i class="fab fa-whatsapp"></i>
+</a>
 
 </body>
 </html>
